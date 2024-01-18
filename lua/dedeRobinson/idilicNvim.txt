@@ -1,0 +1,28 @@
+FEATURE LIST I WANT TO ADD TO NVIM
+5.Git worktrees --0
+7.Perfect js and py theme --50
+9.JSDOC Easier
+16.Auto Brackets
+17.Colored brackets
+
+--Data--
+6.Ipynb/Notebooks --200
+10.MONGO DB support
+11.Kernel Anaconda
+12.SQL DB Support
+13.How to do graphs
+
+TESTING:
+8.Perfect Js and py formatting
+
+
+TODONE:
+1.Git branch in statusline : FugitiveHead()
+2.Easier tab creation key map <leader> t
+14.Move stl up to winbar and delete stl
+4.Easier git add commit push branch checkout
+18.Colored CSV
+
+NVM: 
+3.Auto setup double cmd tab and four split main tab
+15.Smaller font
