@@ -1,16 +1,18 @@
 FEATURE LIST I WANT TO ADD TO NVIM
-5.Git worktrees --0
 7.Perfect js and py theme --50
 9.JSDOC Easier
 16.Auto Brackets
 17.Colored brackets
+19.Neorg
+20.My own Command Line Window Plugin (or https://github.com/folke/noice.nvim)
 
 --Data--
-6.Ipynb/Notebooks --200
+6.Ipynb/Notebooks --magma.nvim perfect, requires new term with image support
 11.Kernel Anaconda
+13.How to do graphs
+
 12.SQL DB Support---tpope-dadbod
 10.MONGO DB support---tpope-dadbod
-13.How to do graphs
 
 TESTING:
 8.Perfect Js and py formatting
@@ -26,3 +28,4 @@ TODONE:
 NVM: 
 3.Auto setup double cmd tab and four split main tab
 15.Smaller font
+5.Git worktrees --0

@@ -3,6 +3,15 @@ vim.cmd('highlight StatusLineNC guifg=#303030 guibg=black')
 -- vim.cmd('highlight StatusLine guifg=#000000 guibg=#000000')
 -- vim.cmd('highlight StatusLineNC guifg=#000000 guibg=#000000')
 -- ---------------------------------------------------
+--Noice
+vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#000000 guibg=#000000')
+vim.cmd('highlight NoicePopup guifg=#000000 guibg=#099999')
+vim.cmd('highlight NoiceCmdlinePopup guifg=#909090 guibg=#000000')
+vim.cmd('highlight NoiceCmdline guifg=#909000 guibg=#099000')
+vim.cmd('highlight NoiceCmdlinePrompt guifg=#909000 guibg=#099000')
+vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')
+vim.cmd('highlight DiagnosticSignWarn guifg=#c0c0c0')
+vim.cmd('highlight NotifyBackground guifg=#c0c0c0')
 -- JS
 
 vim.cmd('highlight @string guifg=#ffbbbb')
@@ -14,6 +23,7 @@ vim.cmd('highlight @lsp.type.class.javascript guifg=#85d1c2')
 vim.cmd('highlight @property.javascript guifg=#9CDCFE')
 vim.cmd('highlight @method.call.javascript guifg=#dcdcaa')
 vim.cmd('highlight @keyword.function.javascript guifg=#569cd6')
+vim.cmd('highlight @include.javascript guifg=#D8A8FF)')
 
 -- LUA
 
