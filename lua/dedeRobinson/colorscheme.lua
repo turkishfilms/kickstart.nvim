@@ -4,14 +4,13 @@ vim.cmd('highlight StatusLineNC guifg=#303030 guibg=black')
 -- vim.cmd('highlight StatusLineNC guifg=#000000 guibg=#000000')
 -- ---------------------------------------------------
 --Noice
-vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#000000 guibg=#000000')
-vim.cmd('highlight NoicePopup guifg=#000000 guibg=#099999')
-vim.cmd('highlight NoiceCmdlinePopup guifg=#909090 guibg=#000000')
-vim.cmd('highlight NoiceCmdline guifg=#909000 guibg=#099000')
+vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#FF0000 guibg=#00FF00') --bg is the full border and fg is just a strange line
+vim.cmd('highlight NoicePopup guifg=#0000FF guibg=#FFFF00')
+vim.cmd('highlight NoiceCmdlinePopup guifg=#cccccc guibg=clear')         --fg is color of cursor in cmdline window, bg is color of background
+vim.cmd('highlight NoiceCmdline guifg=#FF00FF guibg=#FFAA00')
 vim.cmd('highlight NoiceCmdlinePrompt guifg=#909000 guibg=#099000')
-vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')
-vim.cmd('highlight DiagnosticSignWarn guifg=#c0c0c0')
-vim.cmd('highlight NotifyBackground guifg=#c0c0c0')
+vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')   --: symbol when cmdline
+vim.cmd('highlight DiagnosticSignWarn guifg=#FF0099') --/ symbol when searching
 -- JS
 
 vim.cmd('highlight @string guifg=#ffbbbb')
