@@ -5,12 +5,20 @@ vim.cmd('highlight StatusLineNC guifg=#303030 guibg=black')
 -- ---------------------------------------------------
 --Noice
 vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#FF0000 guibg=#00FF00') --bg is the full border and fg is just a strange line
-vim.cmd('highlight NoicePopup guifg=#0000FF guibg=#FFFF00')
+vim.cmd('highlight NoicePopup guifg=#cccccc guibg=clear')                --help in functions like console.log
 vim.cmd('highlight NoiceCmdlinePopup guifg=#cccccc guibg=clear')         --fg is color of cursor in cmdline window, bg is color of background
 vim.cmd('highlight NoiceCmdline guifg=#FF00FF guibg=#FFAA00')
 vim.cmd('highlight NoiceCmdlinePrompt guifg=#909000 guibg=#099000')
-vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')   --: symbol when cmdline
-vim.cmd('highlight DiagnosticSignWarn guifg=#FF0099') --/ symbol when searching
+vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')               --: symbol when cmdline
+vim.cmd('highlight DiagnosticSignWarn guifg=#FF0099')             --/ symbol when searching
+vim.cmd('highlight NotifyBackground guibg=#000000 guifg=#FF0099') --notificatio background
+
+--VIRTUAL TEXT
+vim.cmd('highlight DiagnosticVirtualTextHint guibg=clear')  --did you mean? background cleared
+vim.cmd('highlight DiagnosticVirtualTextInfo guibg=clear')  --did you mean? background cleared
+vim.cmd('highlight DiagnosticVirtualTextError guibg=clear') --did you mean? background cleared
+vim.cmd('highlight DiagnosticVirtualTextWarn guibg=clear')  --did you mean? background cleared
+
 -- JS
 
 vim.cmd('highlight @string guifg=#ffbbbb')
@@ -54,7 +62,7 @@ vim.cmd('highlight Conditional guifg=#d2a8ff') --if wau better
 vim.cmd('highlight Boolean guifg=#2188ff')     --bools
 vim.cmd('highlight Repeat guifg=#d2a8ff')      --bools
 ---------------------------------------------------
---
+--NETRW--
 vim.cmd('highlight EndOfBuffer guibg=none guifg=#000000')     --aftertext color
 vim.cmd('highlight Directory guibg=none guifg=#555555')       --aftertext color
 vim.cmd('highlight netrwList guibg=#000000 guifg=#3c5c88')    --netrw sorted by and sequence

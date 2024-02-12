@@ -3,7 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-	'cmdpalette.nvim',
 	'tpope/vim-surround',
 	'tpope/vim-dadbod',
 	'tpope/vim-jdaddy',
@@ -55,7 +54,7 @@ return {
 				cmdline = {
 					opts = {
 						relative = 'cursor',
-						position = { row = 0, col = 0 },
+						position = { row = 1, col = -99999 },
 					},
 					format = {
 						cmdline = { icon = ":" },
@@ -66,7 +65,16 @@ return {
 						help = { icon = "?" },
 					},
 				},
-				background_colour = '#000000',
+				format = {
+					level = {
+						icons = {
+							error = "X",
+							warn = "W",
+							info = "I",
+						},
+					},
+				},
+				popupmenu = { kind_icons = false },
 				views = {
 					inc_rename = {
 						border = {
@@ -90,31 +98,6 @@ return {
 			})
 		end
 	},
-
-	-- 	"m4xshen/hardtime.nvim",
-	-- 	dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-	-- 	opts = {}
-	-- },
-
-
-	-- {
-	-- 	"hachy/cmdpalette.nvim",
-	-- 	config = function()
-	-- 		require("cmdpalette").setup({
-	-- 			win = {
-	-- 				height = 0.3,
-	-- 				width = 0.8,
-	-- 			},
-	-- 			sign = {
-	-- 				text = ":",
-	-- 			},
-	-- 			buf = {
-	-- 				filetype = "vim",
-	-- 				syntax = "vim",
-	-- 			},
-	-- 		})
-	-- 	end,
-	-- },
 	-- {
 	-- 	"nvim-neorg/neorg",
 	-- 	build = ":Neorg sync-parsers",

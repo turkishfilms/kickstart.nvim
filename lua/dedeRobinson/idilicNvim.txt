@@ -1,10 +1,7 @@
 FEATURE LIST I WANT TO ADD TO NVIM
 7.Perfect js and py theme --50
 9.JSDOC Easier
-16.Auto Brackets
-17.Colored brackets
 19.Neorg
-20.My own Command Line Window Plugin (or https://github.com/folke/noice.nvim)
 
 --Data--
 6.Ipynb/Notebooks --magma.nvim perfect, requires new term with image support
@@ -17,15 +14,31 @@ FEATURE LIST I WANT TO ADD TO NVIM
 TESTING:
 8.Perfect Js and py formatting
 
+NVM: 
+3.Auto setup double cmd tab and four split main tab
+15.Smaller font
+5.Git worktrees --0
+17.Colored brackets
+
+
+new things learned
+tabline showcmd
+noscroll one line 
+new cmd same cursor
+fix all colors
+see if telescope borders can be scratched
+better diffing in nvim
+py
+nb
+neorg
+better notifications
+linewrap on breakat
 
 TODONE:
 1.Git branch in statusline : FugitiveHead()
 2.Easier tab creation key map <leader> t
 14.Move stl up to winbar and delete stl
-4.Easier git add commit push branch checkout
+4.Easier git add commit push branch checkout fugitive
 18.Colored CSV
-
-NVM: 
-3.Auto setup double cmd tab and four split main tab
-15.Smaller font
-5.Git worktrees --0
+16.Auto Brackets self made
+20.My own Command Line Window Plugin (or https://github.com/folke/noice.nvim) modified noice with config
