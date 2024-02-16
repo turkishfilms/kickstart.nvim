@@ -1,8 +1,6 @@
 --tabline
 vim.o.showtabline = 2
-vim.cmd('set sc')
-vim.o.sloc = 'tabline'
-vim.o.tabline = '%Y %S %=%{FugitiveHead()} %t'
+vim.o.tabline = '%Y %=%{FugitiveHead()} %t'
 --stl2
 vim.cmd('set noruler')
 vim.opt.laststatus = 0

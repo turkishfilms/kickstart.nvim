@@ -4,9 +4,9 @@ vim.cmd('highlight StatusLineNC guifg=#303030 guibg=black')
 -- vim.cmd('highlight StatusLineNC guifg=#000000 guibg=#000000')
 -- ---------------------------------------------------
 --Noice
-vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#FF0000 guibg=#00FF00') --bg is the full border and fg is just a strange line
-vim.cmd('highlight NoicePopup guifg=#cccccc guibg=clear')                --help in functions like console.log
-vim.cmd('highlight NoiceCmdlinePopup guifg=#cccccc guibg=clear')         --fg is color of cursor in cmdline window, bg is color of background
+vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#000000 guibg=clear') --bg is the full border and fg is just a strange line
+vim.cmd('highlight NoicePopup guifg=#cccccc guibg=clear')              --help in functions like console.log
+vim.cmd('highlight NoiceCmdlinePopup guifg=#cccccc guibg=clear')       --fg is color of cursor in cmdline window, bg is color of background
 vim.cmd('highlight NoiceCmdline guifg=#FF00FF guibg=#FFAA00')
 vim.cmd('highlight NoiceCmdlinePrompt guifg=#909000 guibg=#099000')
 vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')               --: symbol when cmdline

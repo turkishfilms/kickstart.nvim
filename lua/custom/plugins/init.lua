@@ -59,7 +59,7 @@ return {
 					format = {
 						cmdline = { icon = ":" },
 						search_down = { icon = "/" },
-						search_up = { icon = "\\/" },
+						search_up = { icon = "/" },
 						filter = { icon = "" },
 						lua = { icon = "" },
 						help = { icon = "?" },
@@ -74,12 +74,11 @@ return {
 						},
 					},
 				},
-				popupmenu = { kind_icons = false },
+				popupmenu = { kind_icons = true },
 				views = {
 					inc_rename = {
 						border = {
 							style = 'none',
-							text = { top = 'jk' },
 						},
 					},
 					command_palette = {
