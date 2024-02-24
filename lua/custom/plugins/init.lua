@@ -74,7 +74,10 @@ return {
 						},
 					},
 				},
-				popupmenu = { kind_icons = true },
+				messages = {
+					enabled = false
+				},
+				popupmenu = { kind_icons = false },
 				views = {
 					inc_rename = {
 						border = {
