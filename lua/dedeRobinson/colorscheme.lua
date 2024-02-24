@@ -8,10 +8,10 @@ vim.cmd('highlight NoiceCmdlinePopupBorder guifg=#000000 guibg=clear') --bg is t
 vim.cmd('highlight NoicePopup guifg=#cccccc guibg=clear')              --help in functions like console.log
 vim.cmd('highlight NoiceCmdlinePopup guifg=#cccccc guibg=clear')       --fg is color of cursor in cmdline window, bg is color of background
 vim.cmd('highlight NoiceCmdline guifg=#FF00FF guibg=#FFAA00')
-vim.cmd('highlight NoiceCmdlinePrompt guifg=#909000 guibg=#099000')
-vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')               --: symbol when cmdline
-vim.cmd('highlight DiagnosticSignWarn guifg=#FF0099')             --/ symbol when searching
-vim.cmd('highlight NotifyBackground guibg=#000000 guifg=#FF0099') --notificatio background
+vim.cmd('highlight NoiceCmdlinePrompt guifg=#cccccc guibg=clear')      --the deleteion prompt in netrw
+vim.cmd('highlight NoiceCmdlineIcon guifg=#c0c0c0')                    --: symbol when cmdline
+vim.cmd('highlight DiagnosticSignWarn guifg=#FF0099')                  --/ symbol when searching
+vim.cmd('highlight NotifyBackground guibg=#000000 guifg=#FF0099')      --notificatio background
 
 --VIRTUAL TEXT
 vim.cmd('highlight DiagnosticVirtualTextHint guibg=clear')  --did you mean? background cleared
