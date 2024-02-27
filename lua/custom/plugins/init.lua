@@ -74,6 +74,9 @@ return {
 						},
 					},
 				},
+				notify = {
+					enabled = false
+				},
 				messages = {
 					enabled = false
 				},

@@ -44,23 +44,23 @@ vim.cmd('highlight @property guifg=#88ccaa')
 ----------------------------------------------
 vim.cmd('highlight Normal guibg=none guifg=white')
 vim.cmd('highlight NonText guibg=none guifg=white')
-vim.cmd('highlight LineNr guifg=grey')
-vim.cmd('highlight Comment guifg=#8b949e')
-vim.cmd('highlight PMenu guibg=#333333 guifg=#eeeeee')
-vim.cmd('highlight String guifg=#df8050')
-vim.cmd('highlight Statement guifg=#79b8ff')
-vim.cmd('highlight Identifier guifg=#c8e1ff')   -- idk i thought constants
-vim.cmd('highlight WinSeparator guifg=#b46695') -- for keywords
-vim.cmd('highlight WinSeparator guifg=#000000 guibg=#000000')
-vim.cmd('highlight Function guifg=#fff5b1')
-vim.cmd('highlight Constant guifg=white')      --was previously number
-vim.cmd('highlight Number guifg=#85e89d')      --numbers
-vim.cmd('highlight Conditional guifg=#b46695') --if
-vim.cmd('highlight Character guifg=#00ffff')   --idk
-vim.cmd('highlight Character guifg=#4ec9b0')   --class
-vim.cmd('highlight Conditional guifg=#d2a8ff') --if wau better
-vim.cmd('highlight Boolean guifg=#2188ff')     --bools
-vim.cmd('highlight Repeat guifg=#d2a8ff')      --bools
+-- vim.cmd('highlight LineNr guifg=grey')
+-- vim.cmd('highlight Comment guifg=#8b949e')
+-- vim.cmd('highlight PMenu guibg=#333333 guifg=#eeeeee')
+-- vim.cmd('highlight String guifg=#df8050')
+-- vim.cmd('highlight Statement guifg=#79b8ff')
+-- vim.cmd('highlight Identifier guifg=#c8e1ff')   -- idk i thought constants
+-- vim.cmd('highlight WinSeparator guifg=#b46695') -- for keywords
+-- vim.cmd('highlight WinSeparator guifg=#000000 guibg=#000000')
+-- vim.cmd('highlight Function guifg=#fff5b1')
+-- vim.cmd('highlight Constant guifg=white')      --was previously number
+-- vim.cmd('highlight Number guifg=#85e89d')      --numbers
+-- vim.cmd('highlight Conditional guifg=#b46695') --if
+-- vim.cmd('highlight Character guifg=#00ffff')   --idk
+-- vim.cmd('highlight Character guifg=#4ec9b0')   --class
+-- vim.cmd('highlight Conditional guifg=#d2a8ff') --if wau better
+-- vim.cmd('highlight Boolean guifg=#2188ff')     --bools
+-- vim.cmd('highlight Repeat guifg=#d2a8ff')      --bools
 ---------------------------------------------------
 --NETRW--
 vim.cmd('highlight EndOfBuffer guibg=none guifg=#000000')     --aftertext color
