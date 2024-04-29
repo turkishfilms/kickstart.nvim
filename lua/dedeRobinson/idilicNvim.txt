@@ -1,7 +1,5 @@
 FEATURE LIST I WANT TO ADD TO NVIM
-7.Perfect js and py theme --50
-9.JSDOC Easier
-19.Neorg
+9.JSDOC Easier https://github.com/heavenshell/vim-jsdoc 
 
 --Data--
 6.Ipynb/Notebooks --magma.nvim perfect, requires new term with image support
@@ -40,7 +38,6 @@ linewrap on breakat
 4. keymap conflicts
 5. notifications macro and git mostly
 6. read it.
-7. neorg still
 8. can i run qmk msys in powershell
 
 -----------------------
@@ -53,3 +50,5 @@ TODONE:
 18.Colored CSV
 16.Auto Brackets self made
 20.My own Command Line Window Plugin (or https://github.com/folke/noice.nvim) modified noice with config
+7.Perfect js and py theme --50
+19.Neorg

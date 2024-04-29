@@ -11,3 +11,4 @@ vim.opt.tgc = true
 vim.opt.expandtab = false
 vim.opt.scrolloff = 2
 vim.opt.colorcolumn = '80'
+vim.opt.hlsearch = true
