@@ -76,6 +76,8 @@ vim.cmd 'highlight TabLineFill guibg=white guifg=black'      --tabline bg
 vim.cmd 'highlight Folded guibg=#444444 guifg=black'    --tabline bg
 vim.cmd 'highlight TabLineFill guibg=white guifg=black' --tabline bg
 vim.cmd 'highlight TabLineFill guibg=white guifg=black' --tabline bg
+vim.cmd 'highlight IncSearch guibg=none guifg=white'    --hlsearch current
+vim.cmd 'highlight Search guibg=grey guifg=black'       --hlsearch other
 
 --[[
 --local function told(){

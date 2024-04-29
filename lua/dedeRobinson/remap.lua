@@ -7,21 +7,21 @@ vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>x', ':x<CR>') --Write and Quit i found this out on 1-23-24 2:44pm
 vim.keymap.set('n', '<leader>p', ':Ex<CR>')
-vim.keymap.set('n', '<leader>t', ':tabe<CR>')
-vim.keymap.set('n', '<leader>v', ':vsplit<CR>')                        --Vertical split
-vim.keymap.set('n', '<leader>b', ':split<CR>')                         --Horizontal split
-vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>')                  --Create Terminal
-vim.keymap.set('n', '<leader>z', '$zf%')                               --Auto Fold Braces
-vim.keymap.set('n', '<leader>r', ':s/')                                --Start Substitue Command
-vim.keymap.set('n', '<leader>f', ':find ')                             --Start Substitue Command
-vim.keymap.set('n', '<leader>e', ':e ')                                --Create New File
+-- vim.keymap.set('n', '<leader>t', ':tabe<CR>')
+vim.keymap.set('n', '<leader>v', ':vsplit<CR>')       --Vertical split
+vim.keymap.set('n', '<leader>b', ':split<CR>')        --Horizontal split
+vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>') --Create Terminal
+vim.keymap.set('n', '<leader>z', '$zf%')              --Auto Fold Braces
+-- vim.keymap.set('n', '<leader>r', ':s/')                                --Start Substitue Command
+-- vim.keymap.set('n', '<leader>f', ':find ')                             --Start Substitue Command
+-- vim.keymap.set('n', '<leader>e', ':e ')                                --Create New File
 vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')                 --Run Current Luafile
-vim.keymap.set('n', '<leader>n', ':w<CR><C-W>wi<Up><CR>')              --Run Current js in node
+-- vim.keymap.set('n', '<leader>n', ':w<CR><C-W>wi<Up><CR>')              --Run Current js in node
 vim.keymap.set('n', '<leader><leader>n', ':Neorg workspace notes<CR>') --Run Current js in node
 
 vim.keymap.set('n', '<leader>m', ':mksession vimbook.vim<CR>')         --Auto Make session
 vim.keymap.set('n', '<leader><C-m>', ':source vimbook.vim<CR>')        --Auto Load session
-------------------LINESHIFT------------------|
+------------------LINESHIFT------------------|-prime
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")                           --Alt down (Moves Selection down)
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")                           --Alt Up (Moves Selection up)
 
