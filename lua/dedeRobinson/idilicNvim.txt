@@ -33,6 +33,17 @@ nb
 neorg
 better notifications
 linewrap on breakat
+----Kickstart 2--------
+1. Colors are off
+2. Press enter prompt
+3. Tabline color
+4. keymap conflicts
+5. notifications macro and git mostly
+6. read it.
+7. neorg still
+8. can i run qmk msys in powershell
+
+-----------------------
 
 TODONE:
 1.Git branch in statusline : FugitiveHead()

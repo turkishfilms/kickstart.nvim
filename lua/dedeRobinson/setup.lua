@@ -1,11 +1,13 @@
-vim.cmd('set relativenumber')
-vim.cmd('set number numberwidth=9')
-vim.cmd('set numberwidth=1')
-vim.cmd('set signcolumn=no')
-vim.cmd('set tabstop=4') --tab is 4 spaces
-vim.cmd('set path+=**')
-vim.cmd('set softtabstop=0')
-vim.cmd('set noexpandtab')
-vim.cmd('set shiftwidth=4')
--- vim.cmd('set colorcolumn=80')
-vim.cmd('set cmdheight=0')
+vim.opt.relativenumber = true
+vim.opt.number = true
+vim.opt.numberwidth = 1
+vim.opt.signcolumn = 'no'
+vim.opt.tabstop = 4 --tab is 4 spaces
+vim.opt.path:append { '**' }
+vim.opt.softtabstop = 0
+vim.opt.shiftwidth = 4
+vim.opt.cmdheight = 0
+vim.opt.tgc = true
+vim.opt.expandtab = false
+vim.opt.scrolloff = 2
+vim.opt.colorcolumn = '80'

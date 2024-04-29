@@ -1,8 +1,8 @@
-require("dedeRobinson.colorscheme")
-require("dedeRobinson.remap")
-require("dedeRobinson.setup")
-require("dedeRobinson.netrw")
-require("dedeRobinson.cursor")
-require("dedeRobinson.autocommands")
-require("dedeRobinson.statusline")
-require("dedeRobinson.stabusline")
+require 'dedeRobinson.remap'
+require 'dedeRobinson.setup'
+require 'dedeRobinson.colorscheme'
+require 'dedeRobinson.netrw'
+require 'dedeRobinson.cursor'
+require 'dedeRobinson.autocommands'
+require 'dedeRobinson.statusline'
+require 'dedeRobinson.stabusline'
