@@ -1,8 +1,8 @@
-vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]]) --format on save
-vim.cmd([[
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]] --format on save
+vim.cmd [[
 autocmd FileType help setlocal relativenumber number
 autocmd FileType help wincmd H
-]]) --auto help doc
+]] --auto help doc
 
 -- vim.cmd [[
 --   autocmd FileType cmdline lua require('noice.nvim').setup({
@@ -13,3 +13,9 @@ autocmd FileType help wincmd H
 --     }
 --   })
 -- ]]
+vim.cmd [[	augroup vimrc-incsearch-highlight
+		  autocmd!
+		  autocmd CmdlineEnter /,\? :set hlsearch
+		  autocmd CmdlineLeave /,\? :set nohlsearch
+		augroup END
+]]
