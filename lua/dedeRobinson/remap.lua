@@ -33,6 +33,7 @@ vim.keymap.set('n', '<leader>gh', ':G checkout ')        --git checkout
 vim.keymap.set('n', '<leader>gb', ':G branch ')          --git checkout
 vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')  --git pull everything
 vim.keymap.set('n', '<leader>gm', ':G merge origin ')    --git pull everything
+vim.keymap.set('n', '<leader>gs', ':G<CR>')              --git status
 --DIFS--
 vim.keymap.set('n', '<leader>dl', ':diffget LO<CR>]czz') --Grab From Local
 vim.keymap.set('n', '<leader>db', ':diffget BA<CR>]czz') --Grab From Base

@@ -19,3 +19,6 @@ vim.cmd [[	augroup vimrc-incsearch-highlight
 		  autocmd CmdlineLeave /,\? :set nohlsearch
 		augroup END
 ]]
+-- vim.cmd [[
+-- autocmd BufLeave
+-- ]]
