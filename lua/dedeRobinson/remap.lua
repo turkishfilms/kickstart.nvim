@@ -29,6 +29,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")                           --Alt Up 
 vim.keymap.set('n', '<leader>ga', ':G add .<CR>')        --git add all
 vim.keymap.set('n', '<leader>gc', ':G commit<CR>')       --git commit
 vim.keymap.set('n', '<leader>go', ':G push origin ')     --git push
+vim.keymap.set('n', '<leader>gi', ':G push<CR>')     --git push
 vim.keymap.set('n', '<leader>gh', ':G checkout ')        --git checkout
 vim.keymap.set('n', '<leader>gb', ':G branch ')          --git checkout
 vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')  --git pull everything
