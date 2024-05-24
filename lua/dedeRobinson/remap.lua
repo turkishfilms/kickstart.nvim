@@ -6,7 +6,7 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>x', ':x<CR>') --Write and Quit i found this out on 1-23-24 2:44pm
-vim.keymap.set('n', '<leader>p', ':Ex<CR>')
+vim.keymap.set('n', '<leader>p', ':silent! Ex<CR>')
 -- vim.keymap.set('n', '<leader>t', ':tabe<CR>')
 vim.keymap.set('n', '<leader>v', ':vsplit<CR>')       --Vertical split
 vim.keymap.set('n', '<leader>b', ':split<CR>')        --Horizontal split
@@ -29,7 +29,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")                           --Alt Up 
 vim.keymap.set('n', '<leader>ga', ':silent! G add .<CR>')  --git add all
 vim.keymap.set('n', '<leader>gc', ':silent! G commit<CR>') --git commit
 vim.keymap.set('n', '<leader>go', ':G push origin ')       --git push
-vim.keymap.set('n', '<leader>gi', 'G push<CR>')            --git push
+vim.keymap.set('n', '<leader>gi', ':G push<CR>')           --git push
 vim.keymap.set('n', '<leader>gh', ':silent! G checkout ')  --git checkout
 vim.keymap.set('n', '<leader>gb', ':silent! G branch ')    --git checkout
 vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')    --git pull everything
