@@ -122,6 +122,9 @@ return {
 							},
 						},
 					},
+					['core.tempus'] = {},
+					['core.ui'] = {},
+					['core.ui.calendar'] = {},
 					-- ['core.keybinds'] = {
 					-- 	default_keybinds = false,
 					-- 	hook = function(keybinds)

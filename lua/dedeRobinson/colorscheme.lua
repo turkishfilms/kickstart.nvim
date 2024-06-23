@@ -75,16 +75,3 @@ vim.cmd 'highlight Folded guibg=#444444 guifg=black'
 vim.cmd 'highlight TabLineFill guibg=none guifg=grey gui=none' --tabline bg
 vim.cmd 'highlight IncSearch guibg=none guifg=white'           --hlsearch current
 vim.cmd 'highlight Search guibg=grey guifg=black'              --hlsearch other
-
---[[
---local function told(){
-	print('hey brat');
-	print('hey brat');
--- 	print('hey brat');
--- 	print('hey brat');
--- 	print('hey brat');
--- 	print('hey brat');
--- 	print('hey brat');
--- 	}
---  end
- --]]
