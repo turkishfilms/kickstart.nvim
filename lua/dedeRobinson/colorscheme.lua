@@ -43,7 +43,7 @@ vim.cmd 'highlight @keyword guifg=#d8b3e4'
 vim.cmd 'highlight @property guifg=#88ccaa'
 ----------------------------------------------
 vim.cmd 'highlight Normal guibg=none guifg=white'
-vim.cmd 'highlight NonText guibg=none guifg=white'
+vim.cmd 'highlight NonText guibg=red guifg=blue'
 vim.cmd 'highlight LineNr guifg=grey'
 vim.cmd 'highlight Comment guifg=#8b949e'
 vim.cmd 'highlight PMenu guibg=#333333 guifg=#eeeeee'
@@ -63,7 +63,7 @@ vim.cmd 'highlight Boolean guifg=#2188ff'     --bools
 vim.cmd 'highlight Repeat guifg=#d2a8ff'      --bools
 ---------------------------------------------------
 --NETRW--
-vim.cmd 'highlight EndOfBuffer guibg=none guifg=#000000'     --aftertext color
+vim.cmd 'highlight EndOfBuffer guibg=none guifg=grey'        --aftertext color
 vim.cmd 'highlight Directory guibg=none guifg=#555555'       --aftertext color
 vim.cmd 'highlight netrwList guibg=#000000 guifg=#3c5c88'    --netrw sorted by and sequence
 vim.cmd 'highlight netrwHelpCmd guibg=#000000 guifg=#333333' --netrw help buttons (f1 D R etc)

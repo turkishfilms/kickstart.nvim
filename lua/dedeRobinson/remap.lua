@@ -21,9 +21,11 @@ vim.keymap.set('n', '<leader><leader>n', ':Neorg workspace notes<CR>') --Run Cur
 
 vim.keymap.set('n', '<leader>m', ':mksession vimbook.vim<CR>')         --Auto Make session
 vim.keymap.set('n', '<leader><C-m>', ':source vimbook.vim<CR>')        --Auto Load session
+vim.keymap.set('n', '<CR>', ':noh<CR>')                                --Auto Load session
+
 ------------------LINESHIFT------------------|-prime
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")                           --Alt down (Moves Selection down)
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")                           --Alt Up (Moves Selection up)
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv") --Alt down (Moves Selection down)
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv") --Alt Up (Moves Selection up)
 
 -----------------------GIT--------------------------|
 vim.keymap.set('n', '<leader>ga', ':silent! G add .<CR>')  --git add all

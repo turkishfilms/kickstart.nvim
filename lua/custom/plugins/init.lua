@@ -122,6 +122,12 @@ return {
 							},
 						},
 					},
+					-- ['core.keybinds'] = {
+					-- 	default_keybinds = false,
+					-- 	hook = function(keybinds)
+					-- 		keybinds.remap_event('norg', 'i', '<S-CR>', 'core.itero.next-iteration')
+					-- 	end,
+					-- },
 				},
 			}
 		end,

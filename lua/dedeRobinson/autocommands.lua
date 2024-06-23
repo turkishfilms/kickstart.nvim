@@ -8,10 +8,7 @@ autocmd FileType help wincmd H
 vim.api.nvim_create_autocmd('BufWritePost', {
 	pattern = '*.norg',
 	callback = function()
-		local file = vim.fn.expand '%:t'
 		os.execute 'git add .'
-		os.execute 'git commit -m "Auto-commit"'
-		os.execute 'git push origin master'
 	end,
 })
 
