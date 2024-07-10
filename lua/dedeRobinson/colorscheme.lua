@@ -75,3 +75,8 @@ vim.cmd 'highlight Folded guibg=#444444 guifg=black'
 vim.cmd 'highlight TabLineFill guibg=none guifg=grey gui=none' --tabline bg
 vim.cmd 'highlight IncSearch guibg=none guifg=white'           --hlsearch current
 vim.cmd 'highlight Search guibg=grey guifg=black'              --hlsearch other
+-------------------------------------------------
+--NORG--
+vim.cmd 'highlight @neorg.links.file.delimiter.norg guibg=none guifg=white'     --semicolon color in link
+vim.cmd 'highlight @neorg.links.location.delimiter.norg guibg=none guifg=black' --curly brckt color links
+vim.cmd 'highlight @neorg.error.norg guibg=none guifg=red'                      --lonesome first bracket color

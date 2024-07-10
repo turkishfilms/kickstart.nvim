@@ -6,12 +6,21 @@ autocmd FileType help wincmd H
 ]] --auto help doc
 
 vim.api.nvim_create_autocmd('BufWritePost', {
-	pattern = '*.norg',
-	callback = function()
-		os.execute 'git add .'
-	end,
+  pattern = '*.norg',
+  callback = function()
+    os.execute 'git add .'
+  end,
 })
-
+--
+-- vim.api.nvim_create_autocmd('BufWritePost', {
+--   pattern = '*.norg',
+--   callback = function()
+--     vim.fn.system 'git add .'
+--     vim.fn.system 'git commit -m "save on exit"'
+--     vim.fn.system 'git push'
+--   end,
+--   group = vim.api.nvim_create_augroup('SaveOnExit', { clear = true }),
+-- })
 ---------------------------------------------
 -- vim.cmd [[
 --   autocmd FileType cmdline lua require('noice.nvim').setup({
