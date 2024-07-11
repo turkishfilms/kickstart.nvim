@@ -1,3 +1,5 @@
+vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.numberwidth = 1
 vim.opt.signcolumn = 'no'
 vim.opt.tabstop = 4 --tab is 4 spaces
@@ -12,5 +14,4 @@ vim.opt.colorcolumn = '80'
 vim.opt.shortmess = 'WoOTfF'
 -- hi
 -- vim.opt.hlsearch = true
-vim.opt.relativenumber = true
-vim.opt.number = true
+vim.cmd('set fillchars+=eob:^')
