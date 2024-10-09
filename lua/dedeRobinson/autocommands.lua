@@ -42,3 +42,9 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- vim.cmd [[
 -- autocmd BufLeave
 -- ]]
+vim.api.nvim_create_autocmd("Filetype", {
+    pattern = "norg",
+    callback = function()
+		vim.api.nvim_set_keymap('n', '<M-p>', ':noh<CR>', { noremap = true, silent = true })
+    end,
+})

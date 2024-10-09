@@ -72,7 +72,7 @@ return {
           },
         },
         notify = {
-          enabled = true,
+          enabled = false,
         },
         messages = {
           enabled = false,
@@ -126,14 +126,15 @@ return {
           ['core.ui'] = {},
           ['core.ui.calendar'] = {},
           ['core.keybinds'] = {
-            config = {
-              default_keybinds = false,
-              hook = function(keybinds)
-                keybinds.remap_event('norg', 'i', '<S-CR>', 'core.itero.next-iteration')
-                keybinds.remap_event('norg', 'n', '<C-Space>', 'core.qol.todo_items.todo.task_done')
-                -- keybinds.remap('norg', 'i', )
-              end,
-            },
+            -- config = {
+            --   default_keybinds = false,
+            --   hook = function(keybinds)
+            --     keybinds.remap_event('norg', 'i', '<S-CR>', 'core.itero.next-iteration')
+            --     keybinds.remap_event('norg', 'n', '<C-Space>', 'core.qol.todo_items.todo.task_done')
+            --     keybinds.remap_event('norg', 'n', '<CR>', '<Plug>(neorg.esupports.hop.hop-link)')
+            --     -- keybinds.remap('norg', 'i', )
+            --   end,
+            -- },
           },
         },
       }
