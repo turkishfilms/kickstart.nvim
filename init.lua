@@ -54,7 +54,7 @@ require('lazy').setup({
   --    require('Comment').setup({})
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',    opts = {} },
+  { 'numToStr/Comment.nvim',      opts = {} },
 
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following lua:
@@ -88,22 +88,26 @@ require('lazy').setup({
   -- Then, because we use the `config` key, the configuration only runs
   -- after the plugin has been loaded:
   --  config = function() ... end
-
+  { 'nvim-tree/nvim-web-devicons' },
   {                     -- Useful plugin to show you pending keybinds.
     'folke/which-key.nvim',
     event = 'VeryLazy', -- Sets the loading event to 'VeryLazy'
+    opts = {
+      spec = {
+      },
+    },
+    keys = {},
     config = function() -- This is the function that runs, AFTER loading
       require('which-key').setup()
-
-      -- Document existing key chains
-      require('which-key').register {
-        ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-        ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-        ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
-        ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-        ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
-        ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-      }
+      require('which-key').add( {
+        { '', group = '[D]ocument' },
+        { '', group = '[S]earch' },
+        { '', group = '[R]ename' },
+        { '', group = '[G]it' },
+        { '', group = '[W]orkspace' },
+        { '', group = '[C]ode' },
+        { '', desc = '',            hidden = true, mode = { 'n', 'n', 'n', 'n', 'n', 'n' } },
+      })
     end,
   },
 
@@ -363,7 +367,8 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {},
+        -- tsserver = {},
+        ts_ls = {},
         --
 
         lua_ls = {
