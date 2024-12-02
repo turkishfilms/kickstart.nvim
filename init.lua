@@ -99,7 +99,7 @@ require('lazy').setup({
     keys = {},
     config = function() -- This is the function that runs, AFTER loading
       require('which-key').setup()
-      require('which-key').add( {
+      require('which-key').add({
         { '', group = '[D]ocument' },
         { '', group = '[S]earch' },
         { '', group = '[R]ename' },
@@ -234,7 +234,7 @@ require('lazy').setup({
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- Useful status updates for LSP.
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+      -- opts = {}` is the same as calling `require('fidget').setup({})
     },
     config = function()
       -- Brief Aside: **What is LSP?**

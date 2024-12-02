@@ -4,6 +4,7 @@
 vim.g.mapleader = ' '
 -------NORMAL--------
 vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>W', ':wa<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>x', ':x<CR>') --Write and Quit i found this out on 1-23-24 2:44pm
 vim.keymap.set('n', '<leader>p', ':silent! Ex<CR>')

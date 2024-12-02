@@ -27,7 +27,7 @@ return {
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
- {      'rcarriga/nvim-notify',enabled= false }
+      { 'rcarriga/nvim-notify', enabled = false },
     },
     config = function()
       require('noice').setup {
@@ -41,11 +41,11 @@ return {
         },
         -- you can enable a preset for easier configuration
         presets = {
-          bottom_search = false, -- use a classic bottom cmdline for search
-          command_palette = true, -- position the cmdline and popupmenu together
+          bottom_search = false,        -- use a classic bottom cmdline for search
+          command_palette = true,       -- position the cmdline and popupmenu together
           long_message_to_split = true, -- long messages will be sent to a split
-          inc_rename = true, -- enables an input dialog for inc-rename.nvim
-          lsp_doc_border = false, -- add a border to hover docs and signature help
+          inc_rename = true,            -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = false,       -- add a border to hover docs and signature help
         },
 
         cmdline = {
@@ -112,10 +112,10 @@ return {
     config = function()
       require('neorg').setup {
         load = {
-          ['core.defaults'] = {}, -- Loads default behaviour
+          ['core.defaults'] = {},  -- Loads default behaviour
           ['core.concealer'] = {}, -- Adds pretty icons to your documents
           ['core.esupports.hop'] = {},
-          ['core.dirman'] = { -- Manages Neorg workspaces
+          ['core.dirman'] = {      -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = '~/notes',
@@ -139,62 +139,26 @@ return {
       }
     end,
   },
+  {
+    'j-hui/fidget.nvim',
+    opts = {
+      progress = {
+        poll_rate = 0,
+        supress_on_insert = true,
+      },
+    },
+  },
+
   --for ipynb
   ----molten
 
-  'benlubas/molten-nvim',
-
+  { 'luk400/vim-jukit' },
   --
+  -- 'benlubas/molten-nvim',
   -- 'dccsillag/magma-nvim',
-  -- 'meatballs/notebook.nvim', --MAGMA WILL BE BETTER
-
-  --  {		config = function()
-  -- 	require("notebook").setup(){
-  --  api = require("notebook.api"),
-  --  settings = require("notebook.settings"),
-  --
-  -- function _G.define_cell(extmark)
-  --     if extmark == nil then
-  --          line = vim.fn.line(".")
-  --         extmark, _ = api.current_extmark(line)
-  --     end
-  --      start_line = extmark[1] + 1
-  --      end_line = extmark[3].end_row
-  --     pcall(function() vim.fn.MagmaDefineCell(start_line, end_line) end)
-  -- end
-  --
-  -- function _G.define_all_cells()
-  --      buffer = vim.api.nvim_get_current_buf()
-  --      extmarks = settings.extmarks[buffer]
-  --     for id, cell in pairs(extmarks) do
-  --          extmark = vim.api.nvim_buf_get_extmark_by_id(
-  --             0, settings.plugin_namespace, id, { details = true }
-  --         )
-  --         if cell.cell_type == "code" then
-  --             define_cell(extmark)
-  --         end
-  --     end
-  -- end
-  --
-  -- vim.api.nvim_create_autocmd(
-  --     { "BufRead", },
-  --     { pattern = { "*.ipynb" }, command = "MagmaInit" }
-  -- )
-  -- vim.api.nvim_create_autocmd(
-  --      "User",
-  --     { pattern = { "MagmaInitPost", "NBPostRender" }, callback = _G.define_all_cells },
-  -- 			)
-  -- 				-- Whether to insert a blank line at the top of the notebook
-  -- 				insert_blank_line = true,
-  --
-  -- 				-- Whether to display the index number of a cell
-  -- 				show_index = true,
-  --
-  -- 				-- Whether to display the type of a cell
-  -- 				show_cell_type = true,
-  --
-  -- 				-- Style for the virtual text at the top of a cell
-  -- 				virtual_text_style = { fg = 'lightblue', italic = true },
-  -- 			}
-  -- 		end,
+  -- {
+  --   'meatballs/notebook.nvim', --MAGMA WILL BE BETTER
+  --   config = function()
+  --     require('notebook').setup()
+  --   end,
 }
