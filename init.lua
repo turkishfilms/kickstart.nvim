@@ -93,13 +93,12 @@ require('lazy').setup({
     'folke/which-key.nvim',
     event = 'VeryLazy', -- Sets the loading event to 'VeryLazy'
     opts = {
-      spec = {
-      },
+      spec = {},
     },
     keys = {},
     config = function() -- This is the function that runs, AFTER loading
       require('which-key').setup()
-      require('which-key').add({
+      require('which-key').add {
         { '', group = '[D]ocument' },
         { '', group = '[S]earch' },
         { '', group = '[R]ename' },
@@ -107,7 +106,7 @@ require('lazy').setup({
         { '', group = '[W]orkspace' },
         { '', group = '[C]ode' },
         { '', desc = '',            hidden = true, mode = { 'n', 'n', 'n', 'n', 'n', 'n' } },
-      })
+      }
     end,
   },
 
@@ -637,5 +636,6 @@ require('lazy').setup({
   { import = 'custom.plugins' },
 }, {})
 require 'dedeRobinson'
+vim.g.jukit_mappings = 0
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

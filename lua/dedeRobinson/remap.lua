@@ -9,11 +9,12 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>x', ':x<CR>') --Write and Quit i found this out on 1-23-24 2:44pm
 vim.keymap.set('n', '<leader>p', ':silent! Ex<CR>')
 -- vim.keymap.set('n', '<leader>t', ':tabe<CR>')
-vim.keymap.set('n', '<leader>v', ':vsplit<CR>')        --Vertical split
-vim.keymap.set('n', '<leader>b', ':split<CR>')         --Horizontal split
-vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>')  --Create Terminal
-vim.keymap.set('n', '<leader>z', '$zf%')               --Auto Fold Braces
-vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>') --Run Current Luafile
+vim.keymap.set('n', '<leader>v', ':vsplit<CR>')               --Vertical split
+vim.keymap.set('n', '<leader>b', ':split<CR>')                --Horizontal split
+vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>')         --Create Terminal
+vim.keymap.set('n', '<leader>z', '$zf%')                      --Auto Fold Braces
+vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')        --Run Current Luafile
+vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>') --Show Date/Time
 
 ------------------LINESHIFT------------------|-prime
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv") --Alt down (Moves Selection down)

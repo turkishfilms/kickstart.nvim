@@ -41,11 +41,11 @@ return {
         },
         -- you can enable a preset for easier configuration
         presets = {
-          bottom_search = false,        -- use a classic bottom cmdline for search
-          command_palette = true,       -- position the cmdline and popupmenu together
+          bottom_search = false, -- use a classic bottom cmdline for search
+          command_palette = true, -- position the cmdline and popupmenu together
           long_message_to_split = true, -- long messages will be sent to a split
-          inc_rename = true,            -- enables an input dialog for inc-rename.nvim
-          lsp_doc_border = false,       -- add a border to hover docs and signature help
+          inc_rename = true, -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = false, -- add a border to hover docs and signature help
         },
 
         cmdline = {
@@ -112,10 +112,10 @@ return {
     config = function()
       require('neorg').setup {
         load = {
-          ['core.defaults'] = {},  -- Loads default behaviour
+          ['core.defaults'] = {}, -- Loads default behaviour
           ['core.concealer'] = {}, -- Adds pretty icons to your documents
           ['core.esupports.hop'] = {},
-          ['core.dirman'] = {      -- Manages Neorg workspaces
+          ['core.dirman'] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = '~/notes',
@@ -152,7 +152,12 @@ return {
   --for ipynb
   ----molten
 
-  { 'luk400/vim-jukit' },
+  -- {
+  --   'luk400/vim-jukit',
+  --   config = function()
+  --     vim.g.jukit_mappings = 0
+  --   end,
+  -- }, this is great just have to learn to disable <CR> mappings
   --
   -- 'benlubas/molten-nvim',
   -- 'dccsillag/magma-nvim',
