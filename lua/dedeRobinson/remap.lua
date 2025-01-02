@@ -31,10 +31,11 @@ vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')       --git pull everyth
 vim.keymap.set('n', '<leader>gm', ':G merge origin ')         --git pull everything
 vim.keymap.set('n', '<leader>gs', ':G<CR>')                   --git status
 vim.keymap.set('n', '<leader>gk', ':silent! G commit -a<CR>') --git add all
+vim.keymap.set('n', '<leader><leader>t', ':wa<CR>:G commit -am didathing<CR>:G push origin master')
 --DIFS--
-vim.keymap.set('n', '<leader>dl', ':diffget LO<CR>]czz')      --Grab From Local
-vim.keymap.set('n', '<leader>db', ':diffget BA<CR>]czz')      --Grab From Base
-vim.keymap.set('n', '<leader>dr', ':diffget RE<CR>]czz')      --Grab From Remote
+vim.keymap.set('n', '<leader>dl', ':diffget LO<CR>]czz') --Grab From Local
+vim.keymap.set('n', '<leader>db', ':diffget BA<CR>]czz') --Grab From Base
+vim.keymap.set('n', '<leader>dr', ':diffget RE<CR>]czz') --Grab From Remote
 
 -------INSERT--------
 vim.keymap.set('i', 'jj', '<Esc>') --Home Row Normal Mode
