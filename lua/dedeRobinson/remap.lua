@@ -27,10 +27,11 @@ vim.keymap.set('n', '<leader>go', ':G push origin ')          --git push
 vim.keymap.set('n', '<leader>gi', ':G push<CR>')              --git push
 vim.keymap.set('n', '<leader>gh', ':silent! G checkout ')     --git checkout
 vim.keymap.set('n', '<leader>gb', ':silent! G checkout -b ')  --git branch
-vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')       --git pull everything
+vim.keymap.set('n', '<leader>gp', ':G pull --all <CR>')       --git pull everything (maybe fetch instead)
 vim.keymap.set('n', '<leader>gm', ':G merge origin ')         --git pull everything
 vim.keymap.set('n', '<leader>gs', ':G<CR>')                   --git status
 vim.keymap.set('n', '<leader>gk', ':silent! G commit -a<CR>') --git add all
+vim.keymap.set('n', '<leader>gl', ':G log<CR>')               --git log
 --DIFS--
 vim.keymap.set('n', '<leader>dl', ':diffget LO<CR>]czz')      --Grab From Local
 vim.keymap.set('n', '<leader>db', ':diffget BA<CR>]czz')      --Grab From Base
