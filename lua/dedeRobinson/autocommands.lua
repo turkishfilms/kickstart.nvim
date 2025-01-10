@@ -20,8 +20,16 @@ vim.api.nvim_create_autocmd('Filetype', {
 
 		-- Get the current buffer's filename
 		local filename = vim.api.nvim_buf_get_name(0)
-		if filename:match('journal') then
-		      vim.cmd('set wrapmargin=45')
+		if filename:match 'journal' then
+			vim.cmd 'set wrapmargin=45'
 		end
+	end,
+})
+
+vim.api.nvim_create_autocmd('BufNewFile', {
+	pattern = 'journal*.norg',
+	callback = function()
+		vim.api.nvim_buf_set_lines(0, 0, 2, false,
+			{ 'Journal - ' .. os.date '%m-%d-%Y' .. ' - Title', '--', os.date '%I:%M%p' })
 	end,
 })
