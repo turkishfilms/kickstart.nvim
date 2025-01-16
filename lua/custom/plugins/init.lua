@@ -157,4 +157,13 @@ return {
   --   config = function()
   --     require('notebook').setup()
   --   end,
+  --
+
+  --   [[my stuff]]
+  {
+    dir = '~/myCode/newPlugin2',
+    config = function()
+      print 'howdydudieduder'
+    end,
+  },
 }

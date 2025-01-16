@@ -49,7 +49,7 @@ vim.keymap.set('i', '[', '[]<Esc>i')
 vim.keymap.set('t', ':q', '<CR>exit<CR>')         --Close Terminal EZ
 vim.keymap.set('t', ':w', '<C-|><C-n><C-w><C-w>') --Exit Terminal EZ
 vim.keymap.set('t', ':W', '<C-|><C-n><C-w><C-w>') --Exit Terminal EZ
-vim.keymap.set('t', '<leader>w', '<C-|><C-n>')    --Exit Terminal EZ (maybe change this, lol, you may want to type SPACE w at some point)
+vim.keymap.set('t', '<leader>w', '<C-|><C-n>')    --Exit Terminal EZ (maybe change this, lol, you may want to type SPACE w at some point, #from the future: just type it slowly?)
 
 ---------EX COMMAND ALIAS----------
 vim.api.nvim_create_user_command('W', 'w', {})
