@@ -9,12 +9,13 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>x', ':x<CR>') --Write and Quit i found this out on 1-23-24 2:44pm
 vim.keymap.set('n', '<leader>p', ':silent! Ex<CR>')
 -- vim.keymap.set('n', '<leader>t', ':tabe<CR>')
-vim.keymap.set('n', '<leader>v', ':vsplit<CR>')               --Vertical split
-vim.keymap.set('n', '<leader>b', ':split<CR>')                --Horizontal split
-vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>')         --Create Terminal
-vim.keymap.set('n', '<leader>z', '$zf%')                      --Auto Fold Braces
-vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')        --Run Current Luafile
-vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>') --Show Date/Time
+vim.keymap.set('n', '<leader>v', ':vsplit<CR>')                                     --Vertical split
+vim.keymap.set('n', '<leader>b', ':split<CR>')                                      --Horizontal split
+vim.keymap.set('n', '<leader>,', ':Vex<CR>:term<CR>')                               --Create Terminal
+vim.keymap.set('n', '<leader>z', '$zf%')                                            --Auto Fold Braces
+vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')                              --Run Current Luafile
+vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>')                       --Show Date/Time
+vim.keymap.set('n', '<leader>e', ':e journal<C-r>=strftime("%m%d%Y")<CR>.norg<CR>') --Make new journal entry w date
 
 ------------------LINESHIFT------------------|-prime
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv") --Alt down (Moves Selection down)
@@ -39,8 +40,9 @@ vim.keymap.set('n', '<leader>db', ':diffget BA<CR>]czz')      --Grab From Base
 vim.keymap.set('n', '<leader>dr', ':diffget RE<CR>]czz')      --Grab From Remote
 
 -------INSERT--------
-vim.keymap.set('i', 'jj', '<Esc>') --Home Row Normal Mode
-vim.keymap.set('i', 'jk', '<Esc>') --Home Row Normal Mode
+vim.keymap.set('i', 'jj', '<Esc>')         --Home Row Normal Mode
+vim.keymap.set('i', 'jk', '<Esc>')         --Home Row Normal Mode
+vim.keymap.set('i', '<C-ENTER>', '<Esc>o') --New Line
 ------------AUTOSURROUND------------
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
