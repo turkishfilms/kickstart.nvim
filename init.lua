@@ -1,3 +1,4 @@
+vim.loader.enable()
 vim.cmd 'set tgc'
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

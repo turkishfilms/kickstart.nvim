@@ -15,7 +15,7 @@ vim.opt.shortmess = 'WoOTfF'
 -- hi
 -- vim.opt.hlsearch = true
 -- vim.g.jukit_mappings = 0
---
+vim.g.tree_sitter_clang_extra_args = { '-m64' } --adds x64 libs for treesitter parsing
 --
 --
 --
