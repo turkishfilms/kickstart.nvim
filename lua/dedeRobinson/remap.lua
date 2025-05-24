@@ -16,6 +16,7 @@ vim.keymap.set('n', '<leader>z', '$zf%')                                        
 vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')                              --Run Current Luafile
 vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>')                       --Show Date/Time
 vim.keymap.set('n', '<leader>e', ':e journal<C-r>=strftime("%m%d%Y")<CR>.norg<CR>') --Make new journal entry w date
+vim.keymap.set('n', '<leader>j', 'Go')                                              --Make new journal entry w date
 
 ------------------LINESHIFT------------------|-prime
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv") --Alt down (Moves Selection down)
