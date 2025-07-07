@@ -1,7 +1,11 @@
 --tabline
 vim.o.showtabline = 2
-vim.o.tabline = '%Y %=%{FugitiveHead()} %F'
--- vim.o.tabline = '%Y %=%{FugitiveHead()} %t'
+vim.cmd [[
+function! CurrentDateTime()
+  return strftime("%Y-%m-%d %H:%M")
+endfunction
+]]
+vim.o.tabline = '%Y %{CurrentDateTime()} %=%{FugitiveHead()} %F'
 --stl2
 vim.cmd 'set noruler'
 vim.opt.laststatus = 0
