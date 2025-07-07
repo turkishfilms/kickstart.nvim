@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd('BufNewFile', {
       '',
       'Gratitude:',
       '',
-      'Improve:  ;Plan:',
+      'Improve: ; Plan:',
       '',
       'Achievements: ',
       '',

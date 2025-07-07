@@ -17,6 +17,7 @@ vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>')                          
 vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>')                       --Show Date/Time
 vim.keymap.set('n', '<leader>e', ':e journal<C-r>=strftime("%m%d%Y")<CR>.norg<CR>') --Make new journal entry w date
 vim.keymap.set('n', '<leader>j', 'Go')                                              --Make new journal entry w date
+-- vim.keymap.set('n', '<leader>zj', 'z=')                                             --Make new journal entry w Date
 
 ------------------LINESHIFT------------------|-prime
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv") --Alt down (Moves Selection down)
@@ -49,11 +50,14 @@ vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
 ---------TERMINAL----------
-vim.keymap.set('t', ':q', '<CR>exit<CR>')         --Close Terminal EZ
-vim.keymap.set('t', ':w', '<C-|><C-n><C-w><C-w>') --Exit Terminal EZ
-vim.keymap.set('t', ':W', '<C-|><C-n><C-w><C-w>') --Exit Terminal EZ
-vim.keymap.set('t', '<leader>w', '<C-|><C-n>')    --Exit Terminal EZ (maybe change this, lol, you may want to type SPACE w at some point, #from the future: just type it slowly?)
+vim.keymap.set('t', ':q', '<CR>exit<CR>')                --Close Terminal EZ
+vim.keymap.set('t', ':w', '<C-|><C-n><C-w><C-w>')        --Exit Terminal EZ
+vim.keymap.set('t', ':W', '<C-|><C-n><')                 --Exit Terminal EZ
+vim.keymap.set('t', '<leader>w', '<C-|><C-n><C-w><C-w>') --Exit Terminal EZ (maybe change this, lol, you may want to type SPACE w at some point, #from the future: just type it slowly?)
+vim.keymap.set({ 'n', 't' }, '<leader>a', 'i<Up><CR>')   --From n run last
 
 ---------EX COMMAND ALIAS----------
 vim.api.nvim_create_user_command('W', 'w', {})
+vim.api.nvim_create_user_command('Wa', 'wa', {})
 vim.api.nvim_create_user_command('Q', 'q', {})
+vim.api.nvim_create_user_command('Qa', 'qa', {})
