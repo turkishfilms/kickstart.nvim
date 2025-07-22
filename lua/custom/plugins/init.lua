@@ -4,16 +4,19 @@
 -- See the kickstart.nvim README for more information
 return {
   'tpope/vim-surround',
-  'tpope/vim-dadbod',
-  'tpope/vim-jdaddy',
+  -- 'tpope/vim-dadbod',
+  -- 'tpope/vim-jdaddy',
   'tpope/vim-fugitive',
   -- 'easymotion/vim-easymotion',--Get this to actually work
-  'BurntSushi/ripgrep',
-  'mechatroner/rainbow_csv',
+  -- 'BurntSushi/ripgrep',
+  -- 'mechatroner/rainbow_csv',
   --for neorg
   'nvim-neotest/nvim-nio',
   'pysan3/pathlib.nvim',
-  'nvim-neorg/neorg-lsp',
+  {
+    'nvim-neorg/neorg-lsp',
+    event = 'VeryLazy',
+  },
   --noice
   {
     'folke/noice.nvim',
@@ -41,11 +44,11 @@ return {
         },
         -- you can enable a preset for easier configuration
         presets = {
-          bottom_search = false,        -- use a classic bottom cmdline for search
-          command_palette = true,       -- position the cmdline and popupmenu together
+          bottom_search = false, -- use a classic bottom cmdline for search
+          command_palette = true, -- position the cmdline and popupmenu together
           long_message_to_split = true, -- long messages will be sent to a split
-          inc_rename = true,            -- enables an input dialog for inc-rename.nvim
-          lsp_doc_border = false,       -- add a border to hover docs and signature help
+          inc_rename = true, -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = false, -- add a border to hover docs and signature help
         },
 
         cmdline = {
@@ -100,22 +103,25 @@ return {
       }
     end,
   },
+
   --vhyrro
   {
     'vhyrro/luarocks.nvim',
     priority = 1000,
     config = true,
   },
+
   {
     'nvim-neorg/neorg',
+    ft = 'norg',
     dependencies = { 'luarocks.nvim', 'pathlib.nvim', 'nvim-nio' },
     config = function()
       require('neorg').setup {
         load = {
-          ['core.defaults'] = {},  -- Loads default behaviour
+          ['core.defaults'] = {}, -- Loads default behaviour
           ['core.concealer'] = {}, -- Adds pretty icons to your documents
           ['core.esupports.hop'] = {},
-          ['core.dirman'] = {      -- Manages Neorg workspaces
+          ['core.dirman'] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = '~/notes',
@@ -130,15 +136,16 @@ return {
       }
     end,
   },
-  {
-    'j-hui/fidget.nvim',
-    opts = {
-      progress = {
-        poll_rate = 0,
-        supress_on_insert = true,
-      },
-    },
-  },
+  -- {
+  --   'j-hui/fidget.nvim',
+  --   event = 'VeryLazy',
+  --   opts = {
+  --     progress = {
+  --       poll_rate = 0,
+  --       suppress_on_insert = true,
+  --     },
+  --   },
+  -- },
 
   --for ipynb
   ----molten
@@ -160,10 +167,10 @@ return {
   --
 
   --   [[my stuff]]
-  {
-    dir = '~/myCode/newPlugin2',
-    config = function()
-      print 'howdydudieduder'
-    end,
-  },
+  -- {
+  --   dir = '~/myCode/newPlugin2',
+  --   config = function()
+  --     print 'howdydudieduder'
+  --   end,
+  -- },
 }
