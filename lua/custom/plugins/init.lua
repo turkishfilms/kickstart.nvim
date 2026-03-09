@@ -173,4 +173,12 @@ return {
   --     print 'howdydudieduder'
   --   end,
   -- },
+  {
+    dir = '~/myCode/stopandwatch',
+    config = function()
+      require('stopandwatch').setup {
+        refresh_ms = 100, -- optional
+      }
+    end,
+  },
 }
