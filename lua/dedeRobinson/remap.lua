@@ -19,6 +19,12 @@ vim.keymap.set('n', '<leader>e', ':e journal/journal<C-r>=strftime("%m%d%Y")<CR>
 vim.keymap.set('n', '<leader>j', 'Go') --Mega Down edit bottom of doument
 vim.keymap.set('n', '<leader>c', ':e capture.norg<CR>') --Mega Down edit bottom of doument
 vim.keymap.set('n', '<leader>d', ':e dayPlan.norg<CR>') --Mega Down edit bottom of doument
+-- vim.keymap.set('n', '<leader>i', 'yy:lua local id = vim.ui.img.set(vim.fn.readblob(<Esc>pi),{row=20,column=20,width=50,height=50,zindex=1})<CR>') -- Show img
+vim.keymap.set('n', '<leader>n', ':lua vim.ui.img.del(math.huge)<CR>') -- del images
+vim.keymap.set('n', '<leader>i', function()
+  local filename = vim.api.nvim_get_current_line()
+  local id = vim.ui.img.set(filename, { row = 20, col = 20, width = 50, height = 50 })
+end, { desc = 'Show image from current line' })
 -- vim.keymap.set('n', '<leader>zj', 'z=')
 
 ------------------LINESHIFT------------------|-prime
@@ -47,6 +53,7 @@ vim.keymap.set('n', '<leader>dr', ':diffget RE<CR>]czz') --Grab From Remote
 vim.keymap.set('i', 'jj', '<Esc>') --Home Row Normal Mode
 vim.keymap.set('i', 'jk', '<Esc>') --Home Row Normal Mode
 vim.keymap.set('i', '<C-ENTER>', '<Esc>o') --New Line
+vim.keymap.set('i', 'dpd', '<C-r>=strftime("%Y%m%d%H%M")<CR> <CR>') --New Line
 ------------AUTOSURROUND------------
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
