@@ -20,3 +20,4 @@ vim.opt.shadafile = 'NONE'
 vim.opt.shada = ''
 vim.env.CC = 'clang'
 vim.opt.swapfile = false
+-- vim.g.clipboard = 'unnamedplus'

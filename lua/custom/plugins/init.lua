@@ -110,7 +110,6 @@ return {
     priority = 1000,
     config = true,
   },
-
   {
     'nvim-neorg/neorg',
     ft = 'norg',
@@ -173,5 +172,4 @@ return {
   --     print 'howdydudieduder'
   --   end,
   -- },
-
 }

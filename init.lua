@@ -4,6 +4,13 @@ vim.loader.enable()
 vim.cmd 'set tgc'
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.clipboard = {
+  name = 'xclip',
+  copy = { ['+'] = 'xclip -selection clipboard', ['*'] = 'xclip -selection primary' },
+  paste = { ['+'] = 'xclip -selection clipboard -o', ['*'] = 'xclip -selection primary -o' },
+  cache_enabled = true,
+}
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.breakindent = true
 vim.opt.undofile = true

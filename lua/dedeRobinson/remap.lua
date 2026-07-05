@@ -17,14 +17,20 @@ vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>') --Run Current Luafile
 vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>') --Show Date/Time
 vim.keymap.set('n', '<leader>e', ':e journal/journal<C-r>=strftime("%m%d%Y")<CR>.norg<CR>') --Make new journal entry w date
 vim.keymap.set('n', '<leader>j', 'Go') --Mega Down edit bottom of doument
+
 vim.keymap.set('n', '<leader>c', ':e capture.norg<CR>') --Mega Down edit bottom of doument
 vim.keymap.set('n', '<leader>d', ':e dayPlan.norg<CR>') --Mega Down edit bottom of doument
 -- vim.keymap.set('n', '<leader>i', 'yy:lua local id = vim.ui.img.set(vim.fn.readblob(<Esc>pi),{row=20,column=20,width=50,height=50,zindex=1})<CR>') -- Show img
+
+vim.keymap.set('n', '<leader>c', ':e ~/notes/capture.norg<CR>') --Mega Down edit bottom of doument
+vim.keymap.set('n', '<leader>d', ':e ~/notes/dayPlan.norg<CR>') --Mega Down edit bottom of doument
+vim.api.nvim_set_keymap('n', '<M-p>', ':noh<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>n', ':lua vim.ui.img.del(math.huge)<CR>') -- del images
 vim.keymap.set('n', '<leader>i', function()
   local filename = vim.api.nvim_get_current_line()
   local id = vim.ui.img.set(filename, { row = 20, col = 20, width = 50, height = 50 })
 end, { desc = 'Show image from current line' })
+
 -- vim.keymap.set('n', '<leader>zj', 'z=')
 
 ------------------LINESHIFT------------------|-prime
