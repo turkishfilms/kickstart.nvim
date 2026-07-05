@@ -13,8 +13,8 @@ autocmd FileType help wincmd H
 vim.api.nvim_create_autocmd('Filetype', {
   pattern = 'norg',
   callback = function()
-    -- Map <M-p> to clear search highlighting
-    vim.api.nvim_set_keymap('n', '<M-p>', ':noh<CR>', { noremap = true, silent = true })
+    -- Remap newListItem
+    vim.keymap.set('i', '<C-j>', '<Plug>(neorg.itero.next-iteration)', { buffer = true, remap = true, desc = 'neorg: continue list item' })
 
     -- Get the current buffer's filename
     local filename = vim.api.nvim_buf_get_name(0)

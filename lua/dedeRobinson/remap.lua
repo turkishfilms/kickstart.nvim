@@ -17,8 +17,9 @@ vim.keymap.set('n', '<leader><C-l>', ':luafile %<CR>') --Run Current Luafile
 vim.keymap.set('n', '<leader>D', ':lua print(os.date())<CR>') --Show Date/Time
 vim.keymap.set('n', '<leader>e', ':e journal/journal<C-r>=strftime("%m%d%Y")<CR>.norg<CR>') --Make new journal entry w date
 vim.keymap.set('n', '<leader>j', 'Go') --Mega Down edit bottom of doument
-vim.keymap.set('n', '<leader>c', ':e capture.norg<CR>') --Mega Down edit bottom of doument
-vim.keymap.set('n', '<leader>d', ':e dayPlan.norg<CR>') --Mega Down edit bottom of doument
+vim.keymap.set('n', '<leader>c', ':e ~/notes/capture.norg<CR>') --Mega Down edit bottom of doument
+vim.keymap.set('n', '<leader>d', ':e ~/notes/dayPlan.norg<CR>') --Mega Down edit bottom of doument
+vim.api.nvim_set_keymap('n', '<M-p>', ':noh<CR>', { noremap = true, silent = true })
 -- vim.keymap.set('n', '<leader>zj', 'z=')
 
 ------------------LINESHIFT------------------|-prime
